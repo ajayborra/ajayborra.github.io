@@ -5,29 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My GitHub Page</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#patents">Patents</a></li>
-                <li><a href="#socials">Socials</a></li>
+                <li><a href="#home" onclick="showTab('home')">Home</a></li>
+                <li><a href="#patents" onclick="showTab('patents')">Patents</a></li>
+                <li><a href="#socials" onclick="showTab('socials')">Socials</a></li>
             </ul>
         </nav>
     </header>
-    <section id="home">
+    <section id="home" class="tab-content">
         <h1>Welcome to My GitHub Page</h1>
         <p>This is the home section. You can find more about my work and contributions here.</p>
     </section>
-    <section id="patents">
+    <section id="patents" class="tab-content" style="display:none;">
         <h2>Patents</h2>
-        <ul>
+        <ul id="patent-list">
             <li><a href="https://patents.google.com/patent/US11829391B2/en">Systems, methods, and apparatuses for executing a graph query against a graph representing a plurality of data stores</a></li>
             <!-- Add more patents as needed -->
         </ul>
     </section>
-    <section id="socials">
+    <section id="socials" class="tab-content" style="display:none;">
         <h2>Socials</h2>
         <p>Connect with me on:</p>
         <ul>
